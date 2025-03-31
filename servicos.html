@@ -4,115 +4,298 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Minimercado Soares</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Minimercado Soares</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="frutas-verduras.html">Frutas e Verduras</a></li>
-                <li><a href="nao-pereciveis.html">Não Perecíveis</a></li>
-                <li><a href="higiene-limpeza.html">Higiene e Limpeza</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1><a href="index.html" class="text-white text-decoration-none">Minimercado Soares</a></h1>
+                </div>
+                <div class="col-md-6 text-end">
+                    <button id="botao-contraste" class="btn btn-outline-light btn-sm">
+                        Alto Contraste
+                    </button>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Página Inicial</a></li>
+                    <li><a href="frutas-verduras.html">Frutas e Verduras</a></li>
+                    <li><a href="nao-pereciveis.html">Não Perecíveis</a></li>
+                    <li><a href="higiene-limpeza.html">Higiene e Limpeza</a></li>
+                    <li><a href="servicos.html" class="active">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="container">
         <section>
             <h2>Nossos Serviços</h2>
-            <p>Conheça as opções de serviços oferecidas pelo Minimercado Soares para melhor atender você.</p>
+            <p class="lead">Conheça as opções de serviços oferecidas pelo Minimercado Soares para melhor atender você.</p>
         </section>
 
-        <section>
-            <article>
-                <h3>Retirada no Local</h3>
-                <img src="imagens/retirada.jpg" alt="Retirada no Local" width="300">
-                <p>Faça seu pedido online e retire em nossa loja sem custo adicional. Basta selecionar esta opção no momento da finalização da compra e comparecer ao nosso estabelecimento no horário agendado para retirar seus produtos.</p>
-                <h4>Vantagens:</h4>
-                <ul>
-                    <li>Sem taxa adicional</li>
-                    <li>Evite filas</li>
-                    <li>Garanta disponibilidade dos produtos</li>
-                    <li>Receba seus produtos em uma embalagem pronta para transporte</li>
-                </ul>
-                <h4>Como funciona:</h4>
-                <ol>
-                    <li>Selecione os produtos desejados em nosso site</li>
-                    <li>Escolha a opção "Retirada no Local" ao finalizar a compra</li>
-                    <li>Selecione o horário de sua preferência para retirada</li>
-                    <li>Dirija-se ao balcão de atendimento no horário agendado</li>
-                    <li>Apresente o número do pedido e retire suas compras</li>
-                </ol>
-                <p><strong>Valor:</strong> Grátis</p>
-            </article>
-
-            <article>
-                <h3>Tele-entrega</h3>
-                <img src="imagens/entrega.jpg" alt="Tele-entrega" width="300">
-                <p>Receba suas compras no conforto da sua casa, sem precisar sair. Entregamos em toda a cidade com rapidez e segurança.</p>
-                <h4>Vantagens:</h4>
-                <ul>
-                    <li>Comodidade de receber em casa</li>
-                    <li>Economia de tempo</li>
-                    <li>Produtos entregues com segurança</li>
-                    <li>Acompanhamento do status da entrega</li>
-                </ul>
-                <h4>Como funciona:</h4>
-                <ol>
-                    <li>Selecione os produtos desejados em nosso site</li>
-                    <li>Escolha a opção "Tele-entrega" ao finalizar a compra</li>
-                    <li>Informe o endereço completo para entrega</li>
-                    <li>Selecione o período do dia para receber (manhã, tarde ou noite)</li>
-                    <li>Finalize o pedido e aguarde a entrega no período escolhido</li>
-                </ol>
-                <p><strong>Valor:</strong> R$ 10,00 (para entregas até 5km da loja)</p>
-                <p>Para distâncias maiores, consulte valores adicionais:</p>
-                <ul>
-                    <li>De 5 a 10km: Acréscimo de R$ 5,00</li>
-                    <li>Acima de 10km: Acréscimo de R$ 10,00</li>
-                </ul>
-                <p><em>*Entregas sujeitas à disponibilidade para sua região</em></p>
-            </article>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="card-title mb-0">Retirada no Local</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="imagens/retirada.jpg" alt="Cliente retirando compras no balcão de atendimento do mercado" width="300" class="img-fluid rounded shadow-sm">
+                            </div>
+                            <p class="card-text">Faça seu pedido online e retire em nossa loja sem custo adicional. Basta selecionar esta opção no momento da finalização da compra e comparecer ao nosso estabelecimento no horário agendado para retirar seus produtos.</p>
+                            
+                            <h4 class="mt-4">Vantagens:</h4>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Sem taxa adicional
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Evite filas
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Garanta disponibilidade dos produtos
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Receba seus produtos em uma embalagem pronta para transporte
+                                </li>
+                            </ul>
+                            
+                            <h4>Como funciona:</h4>
+                            <ol class="list-group list-group-numbered mb-4">
+                                <li class="list-group-item">Selecione os produtos desejados em nosso site</li>
+                                <li class="list-group-item">Escolha a opção "Retirada no Local" ao finalizar a compra</li>
+                                <li class="list-group-item">Selecione o horário de sua preferência para retirada</li>
+                                <li class="list-group-item">Dirija-se ao balcão de atendimento no horário agendado</li>
+                                <li class="list-group-item">Apresente o número do pedido e retire suas compras</li>
+                            </ol>
+                            
+                            <div class="alert alert-success">
+                                <strong>Valor:</strong> Grátis
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <a href="agendamento.html" class="btn btn-primary btn-lg">Agendar Retirada</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="card-title mb-0">Tele-entrega</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="imagens/entrega.jpg" alt="Entregador com sacolas de compras na porta de uma residência" width="300" class="img-fluid rounded shadow-sm">
+                            </div>
+                            <p class="card-text">Receba suas compras no conforto da sua casa, sem precisar sair. Entregamos em toda a cidade com rapidez e segurança.</p>
+                            
+                            <h4 class="mt-4">Vantagens:</h4>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Comodidade de receber em casa
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Economia de tempo
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Produtos entregues com segurança
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="badge bg-success rounded-pill me-2">✓</span>
+                                    Acompanhamento do status da entrega
+                                </li>
+                            </ul>
+                            
+                            <h4>Como funciona:</h4>
+                            <ol class="list-group list-group-numbered mb-4">
+                                <li class="list-group-item">Selecione os produtos desejados em nosso site</li>
+                                <li class="list-group-item">Escolha a opção "Tele-entrega" ao finalizar a compra</li>
+                                <li class="list-group-item">Informe o endereço completo para entrega</li>
+                                <li class="list-group-item">Selecione o período do dia para receber</li>
+                                <li class="list-group-item">Finalize o pedido e aguarde a entrega no período escolhido</li>
+                            </ol>
+                            
+                            <div class="alert alert-warning">
+                                <strong>Valor:</strong> R$ 10,00 (para entregas até 5km da loja)
+                                <hr>
+                                <p class="mb-0">Para distâncias maiores, consulte valores adicionais:</p>
+                                <ul class="mb-0 mt-2">
+                                    <li>De 5 a 10km: Acréscimo de R$ 5,00</li>
+                                    <li>Acima de 10km: Acréscimo de R$ 10,00</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <a href="agendamento.html" class="btn btn-primary btn-lg">Agendar Entrega</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h3>Horários de Funcionamento para Serviços</h3>
-            <p><strong>Retirada no Local:</strong> Durante todo o horário de funcionamento da loja</p>
-            <p><strong>Tele-entrega:</strong> Pedidos realizados até às 17h são entregues no mesmo dia</p>
-            <p>Pedidos após às 17h serão entregues no dia seguinte</p>
+        <section class="mt-4">
+            <div class="card bg-light shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Horários de Funcionamento para Serviços</h3>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Retirada no Local</h4>
+                                    <p class="card-text">Durante todo o horário de funcionamento da loja:</p>
+                                    <ul class="mb-0">
+                                        <li>Segunda a Sábado: 6h às 22h</li>
+                                        <li>Domingos e Feriados: 8h às 12h</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Tele-entrega</h4>
+                                    <p class="card-text">Pedidos realizados até às 17h são entregues no mesmo dia.</p>
+                                    <p class="card-text">Pedidos após às 17h serão entregues no dia seguinte.</p>
+                                    <p class="card-text mb-0"><strong>Horário de entregas:</strong> das 8h às 20h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <a href="agendamento.html" class="btn btn-success btn-lg px-4">Agendar Serviço Agora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mt-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Perguntas Frequentes</h3>
+                    
+                    <div class="accordion mt-4" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Como acompanhar minha entrega?
+                                </button>
+                            </h4>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Após finalizar seu pedido, você receberá um código de rastreamento por e-mail. Com esse código, você pode acompanhar o status da sua entrega através do nosso site ou aplicativo.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Posso alterar a data de entrega ou retirada?
+                                </button>
+                            </h4>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Sim, você pode alterar a data de entrega ou retirada até 2 horas antes do horário agendado. Para isso, acesse sua conta em nosso site ou entre em contato com nosso atendimento.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Como solicitar a troca de um produto?
+                                </button>
+                            </h4>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Se você receber um produto com algum problema, entre em contato conosco em até 24 horas após o recebimento. Nosso time de atendimento irá organizar a substituição do item o mais rápido possível.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <section>
-            <h3>Minimercado Soares</h3>
-            <p>CNPJ: 12.345.678/0001-90</p>
-            <p>Rua do meu mercado, 123 - Centro</p>
-            <p>CEP: 12345-678 - Rio de Janeiro/RJ</p>
-            <p>Telefone: (21) 1234-5678</p>
-            <p>E-mail: contato@minimercadosoares.com.br</p>
-        </section>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Minimercado Soares</h3>
+                    <p><i class="fas fa-building me-2"></i>CNPJ: 12.345.678/0001-90</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Rua do meu mercado, 123 - Centro</p>
+                    <p>CEP: 12345-678 - Rio de Janeiro/RJ</p>
+                    <p><i class="fas fa-phone me-2"></i>Telefone: (21) 1234-5678</p>
+                    <p><i class="fas fa-envelope me-2"></i>E-mail: contato@minimercadosoares.com.br</p>
+                </div>
 
-        <section>
-            <h3>Links Rápidos</h3>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="frutas-verduras.html">Frutas e Verduras</a></li>
-                <li><a href="nao-pereciveis.html">Não Perecíveis</a></li>
-                <li><a href="higiene-limpeza.html">Higiene e Limpeza</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-            </ul>
-        </section>
+                <div class="col-md-4">
+                    <h3>Links Rápidos</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fas fa-chevron-right me-1"></i>Página Inicial</a></li>
+                        <li><a href="frutas-verduras.html"><i class="fas fa-chevron-right me-1"></i>Frutas e Verduras</a></li>
+                        <li><a href="nao-pereciveis.html"><i class="fas fa-chevron-right me-1"></i>Não Perecíveis</a></li>
+                        <li><a href="higiene-limpeza.html"><i class="fas fa-chevron-right me-1"></i>Higiene e Limpeza</a></li>
+                        <li><a href="servicos.html"><i class="fas fa-chevron-right me-1"></i>Serviços</a></li>
+                        <li><a href="sobre.html"><i class="fas fa-chevron-right me-1"></i>Sobre Nós</a></li>
+                        <li><a href="cadastro.html"><i class="fas fa-chevron-right me-1"></i>Cadastro</a></li>
+                        <li><a href="agendamento.html"><i class="fas fa-chevron-right me-1"></i>Agendamento</a></li>
+                    </ul>
+                </div>
 
-        <section>
-            <h3>Horário de Funcionamento</h3>
-            <p>Segunda a Sábado: 6h às 22h</p>
-            <p>Domingos e Feriados: 8h às 12h</p>
-        </section>
+                <div class="col-md-4">
+                    <h3>Horário de Funcionamento</h3>
+                    <p><i class="fas fa-clock me-2"></i>Segunda a Sábado: 6h às 22h</p>
+                    <p><i class="fas fa-clock me-2"></i>Domingos e Feriados: 8h às 12h</p>
+                    
+                    <h3 class="mt-4">Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="me-2" aria-label="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="#" class="me-2" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="me-2" aria-label="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Minimercado Soares. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
